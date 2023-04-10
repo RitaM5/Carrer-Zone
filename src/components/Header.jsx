@@ -15,7 +15,6 @@ const Header = () => {
         case '/blog':
             backgroundImage = 'url("/public/assets/All Images/Vector-1.png")';
             break;
-
     }
     const headerStyle = {
         backgroundImage: backgroundImage,

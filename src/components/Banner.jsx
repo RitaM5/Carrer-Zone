@@ -2,7 +2,7 @@ import React from 'react';
 const Banner = () => {
     return (
         <div className='bg-gray-200  min-h-full'>
-            <div className='lg:flex lg:justify-between lg:items-center lg:gap-28 md:col-auto sm:col-auto my-container h-full'>
+            <div className=' lg:flex lg:justify-between lg:items-center lg:gap-28 md:col-auto sm:col-auto my-container h-full'>
                 <div className='space-y-3 '>
                     <p className='text-[#1A1919] font-semibold text-4xl'>
                         One Step Closer To Your
