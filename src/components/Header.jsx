@@ -1,11 +1,30 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-
+import { useLocation } from 'react-router-dom';
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const location = useLocation();
+    let backgroundImage = '';
+    switch (location.pathname) {
+        case '/statistics':
+            backgroundImage = 'url("/public/assets/All Images/Vector-1.png")';
+            break;
+        case '/appliedjobs':
+            backgroundImage = 'url("/public/assets/All Images/Vector-1.png")';
+            break;
+        case '/blog':
+            backgroundImage = 'url("/public/assets/All Images/Vector-1.png")';
+            break;
+
+    }
+    const headerStyle = {
+        backgroundImage: backgroundImage,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'right top',
+    };
     return (
-        <>
-            <div className='px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
+        <header style={headerStyle} className='bg-gray-200'>
+            <div className='my-container'>
                 <div className='relative flex items-center justify-between'>
                     <Link
                         to='/'
@@ -39,12 +58,12 @@ const Header = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <Link to='/appliedjobs'
-                                aria-label='Applied Jobs'
-                                title='Applied Jobs'
+                            <NavLink to='/appliedjobs'
+                                aria-label='Applied jobs'
+                                title='Applied jobs'
                                 className={({ isActive }) => (isActive ? 'active' : 'default')}>
                                 Applied Jobs
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
                             <NavLink
@@ -159,7 +178,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </header>
     );
 };
 
