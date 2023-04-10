@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Category = ({ SingleData }) => {
-    console.log(SingleData);
     const {id, title, img, description} = SingleData;
     return (
         <>

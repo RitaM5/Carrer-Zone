@@ -1,7 +1,7 @@
 [
     {
     "id": "623853b2614ad5aba311fdd1",
-    "job-type": "Onsite",
+    "job_type": "Onsite",
     "time": "Full Time",
     "picture": "/public/assets/Logo/google-1-1 1-1.png",
     "company_name": "Google LLC",
@@ -17,7 +17,7 @@
     },
     {
     "id": "623853b2578e9e6ad1ae0dd5",
-    "job-type": "Remote",
+    "job_type": "Remote",
     "time": "Full Time",
     "picture": "/public/assets/Logo/netflix-4 1.png",
     "company_name": "Netflix",
@@ -33,7 +33,7 @@
     },
     {
     "id": "623853b21fb149d2ee7b76c7",
-    "job-type": "Remote",
+    "job_type": "Remote",
     "time": "Part Time",
     "picture": "/public/assets/Logo/tesla-9 1.png",
     "company_name": "Netflix",
@@ -49,7 +49,7 @@
     },
     {
     "id": "623853b2e91c8de578c9245e",
-    "job-type": "Onsite",
+    "job_type": "Onsite",
     "time": "Full Time",
     "picture": "/public/assets/Logo/client-2.png",
     "company_name": "Belimo",
@@ -65,7 +65,7 @@
     },
     {
     "id": "623853b2239582e48409ccc6",
-    "job-type": "Onsite",
+    "job_type": "Onsite",
     "time": "Full Time",
     "picture": "/public/assets/Logo/client-6.png",
     "company_name": "Trustly",
@@ -81,7 +81,7 @@
     },
     {
     "id": "623853b2cdda0d5bc294f791",
-    "job-type": "Remote",
+    "job_type": "Remote",
     "time": "Full Time",
     "picture": "/public/assets/Logo/client-3.png",
     "company_name": "LifeGroups",

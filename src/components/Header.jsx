@@ -56,6 +56,14 @@ const Header = () => {
                                 Statistics
                             </NavLink>
                         </li>
+                        {/* <li>
+                            <NavLink to='/jobdetails'
+                                aria-label='Job Details'
+                                title='Job Details'
+                                className={({ isActive }) => (isActive ? 'active' : 'default')}>
+                                Details
+                            </NavLink>
+                        </li> */}
                         <li>
                             <NavLink to='/appliedjobs'
                                 aria-label='Applied jobs'
@@ -134,6 +142,16 @@ const Header = () => {
                                     </div>
                                     <nav className=''>
                                         <ul className='space-y-4 text-left'>
+                                        <li>
+                                                <Link
+                                                    to='/'
+                                                    aria-label='Home'
+                                                    title='Home'
+                                                    className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                >
+                                                    Home
+                                                </Link>
+                                            </li>
                                             <li>
                                                 <Link
                                                     to='/statistics'
@@ -144,6 +162,16 @@ const Header = () => {
                                                     Statistics
                                                 </Link>
                                             </li>
+                                            {/* <li>
+                                                <Link
+                                                    to='/jobdetails'
+                                                    aria-label='Job Details'
+                                                    title='Job Details'
+                                                    className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                >
+                                                    Details
+                                                </Link>
+                                            </li> */}
                                             <li>
                                                 <Link
                                                     to='/appliedjobs'
