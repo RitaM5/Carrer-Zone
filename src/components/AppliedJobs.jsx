@@ -28,7 +28,9 @@ const AppliedJobs = () => {
     let newData = []
     for (const id in appliedJobs) {
         const foundData = appliedData.find(Ap => Ap.id === id)
-        newData.push(foundData)
+        if(foundData){
+            newData.push(foundData)
+        }
     }
     return (
         <>
