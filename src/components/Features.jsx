@@ -1,7 +1,7 @@
 import React from 'react';
 import { Loc } from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom';
-const Features = ({ feature, handleDetailsButton }) => {
+const Features = ({ feature}) => {
     const { id, category, picture, job_type, time, location, salary, company_name } = feature;
     return (
         <>

@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useLocation, useParams } from 'react-router-dom';
+import toast, { Toaster } from 'react-hot-toast'
+import { addToDb } from '../utilities/fakeDb';
 const JobDetails = () => {
+    const [hotToast, setHotToast] = useState(true)
     // const location = useLocation();
     // let backgroundImage = '';
     // switch (location.pathname) {
@@ -24,6 +27,12 @@ const JobDetails = () => {
             setDetails(jobDetailsData)
         }
     }, [])
+    const handleAppliedJobs = (details) => {
+        addToDb(details.id)
+        setHotToast(false)
+        hotToast || toast.success('You Already Applied! 👌', { autoClose: 500 })
+        hotToast && toast.success('Your Applied succesfull! 👌', { autoClose: 500 })
+    }
     return (
         <div className='my-container'>
             <h2 className='text-center my-8 text-4xl font-semibold'>Job Details</h2>
@@ -88,7 +97,8 @@ const JobDetails = () => {
                             <span className='font-bold'>Adress:</span> {details.location}
                         </p>
                     </div>
-                    <button className='bg-[#7E90FE] text-white py-3 rounded-md text-lg'>Apply Now</button>
+                    <button onClick={() => handleAppliedJobs(details)} className='bg-[#7E90FE] text-white py-3 rounded-md text-lg'>Apply Now</button>
+                    <Toaster />
                 </div>
             </div>
         </div>

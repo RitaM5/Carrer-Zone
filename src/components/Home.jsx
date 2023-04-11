@@ -11,9 +11,6 @@ const Home = () => {
     const handleShowAll = () => {
         setShowAll(true);
     };
-    const handleDetailsButton = () =>{
-
-    }
     useEffect(() => {
         fetch('/categories.json')
             .then(res => res.json())
@@ -51,7 +48,6 @@ const Home = () => {
                         <Features 
                         feature={feature} 
                         key={feature.id}
-                        handleDetailsButton={handleDetailsButton}
                         /> )
                     }
                 </div>
