@@ -1,22 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { useLoaderData, useLocation, useParams } from 'react-router-dom';
+import { useLoaderData, useParams } from 'react-router-dom';
 import toast, { Toaster } from 'react-hot-toast'
 import { addToDb } from '../utilities/fakeDb';
 const JobDetails = () => {
     const [hotToast, setHotToast] = useState(true)
-    // const location = useLocation();
-    // let backgroundImage = '';
-    // switch (location.pathname) {
-    //     case '/jobdetails':
-    //         backgroundImage = 'url("/public/assets/All Images/Vector.png")';
-    //         break;
-    // }
-    // const bannerStyle = {
-    //     backgroundImage: backgroundImage,
-    //     backgroundRepeat: 'no-repeat',
-    //     backgroundSize: '20% auto',
-    //     backgroundPosition: 'left bottom',
-    // };
     const [details, setDetails] = useState({})
     const dynamicId = useParams();
     const id = dynamicId.id;
@@ -30,7 +17,7 @@ const JobDetails = () => {
     const handleAppliedJobs = (details) => {
         addToDb(details.id)
         setHotToast(false)
-        hotToast || toast.success('You Already Applied! 👌', { autoClose: 500 })
+        hotToast || toast.success('You Already Applied! 🤷‍♀️', { autoClose: 500 })
         hotToast && toast.success('Your Applied succesfull! 👌', { autoClose: 500 })
     }
     return (

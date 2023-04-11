@@ -1,6 +1,7 @@
 [
     {
     "id": "623853b2614ad5aba311fdd1",
+    "index" : 0,
     "job_type": "Onsite",
     "time": "Full Time",
     "picture": "/public/assets/Logo/google-1-1 1-1.png",
@@ -17,6 +18,7 @@
     },
     {
     "id": "623853b2578e9e6ad1ae0dd5",
+    "index" : 1,
     "job_type": "Remote",
     "time": "Full Time",
     "picture": "/public/assets/Logo/netflix-4 1.png",
@@ -33,10 +35,11 @@
     },
     {
     "id": "623853b21fb149d2ee7b76c7",
+    "index" : 3,
     "job_type": "Remote",
     "time": "Part Time",
     "picture": "/public/assets/Logo/tesla-9 1.png",
-    "company_name": "Netflix",
+    "company_name": "Tesla",
     "category": "Senior Product Designer",
     "location": "Kalifornia, USA",
     "salary": "40k-50k",
@@ -49,6 +52,7 @@
     },
     {
     "id": "623853b2e91c8de578c9245e",
+    "index" : 4,
     "job_type": "Onsite",
     "time": "Full Time",
     "picture": "/public/assets/Logo/client-2.png",
@@ -65,6 +69,7 @@
     },
     {
     "id": "623853b2239582e48409ccc6",
+    "index" : 5,
     "job_type": "Onsite",
     "time": "Full Time",
     "picture": "/public/assets/Logo/client-6.png",
@@ -81,6 +86,7 @@
     },
     {
     "id": "623853b2cdda0d5bc294f791",
+    "index" : 6,
     "job_type": "Remote",
     "time": "Full Time",
     "picture": "/public/assets/Logo/client-3.png",

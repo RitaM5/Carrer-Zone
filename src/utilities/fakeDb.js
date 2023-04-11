@@ -1,20 +1,24 @@
+//set applied job data in local storage
 const addToDb = id => {
-   let appliedJobs = {}
-   // get the shopping cart from local storage
+    let appliedJobs = {}
     const storedCard = localStorage.getItem('applied-jobs')
     if (storedCard) {
-      appliedJobs = JSON.parse(storedCard)
+        appliedJobs = JSON.parse(storedCard)
     }
-  
     // add quantity
     const quantity = appliedJobs[id]
     if (!quantity) {
-        // const newQuantity = quantity + 1
-        // appliedJobs[id] = newQuantity
-    //     toast.success('Already applied! 👌', { autoClose: 500 })
-    //   } else {
         appliedJobs[id] = 1
-      }
+    }
     localStorage.setItem('applied-jobs', JSON.stringify(appliedJobs))
-  }
-export { addToDb}
+}
+//get the applied jobs data from local storage
+const getStoredData = () => {
+    let appliedJobs = {}
+    const storedData = localStorage.getItem('applied-jobs')
+    if (storedData) {
+        appliedJobs = JSON.parse(storedData)
+    }
+    return appliedJobs;
+}
+export { addToDb, getStoredData}
