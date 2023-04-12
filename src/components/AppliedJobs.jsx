@@ -39,9 +39,9 @@ const AppliedJobs = () => {
         }, []);
 
     useEffect(() => {
-        const remoteJobs = mainAppliedData.filter(product => product.job_type === 'Remote');
+        const remoteJobs = mainAppliedData.filter(jobs => jobs.job_type === 'Remote');
         setRemote(remoteJobs);
-        const onsiteJobs = mainAppliedData.filter(product => product.job_type === 'Onsite');
+        const onsiteJobs = mainAppliedData.filter(jobs => jobs.job_type === 'Onsite');
         setOnsite(onsiteJobs);
     }, [appliedData]);
 
@@ -52,16 +52,14 @@ const AppliedJobs = () => {
     const handleOnsite = () => {
         setAppliedData(onsite);
     }
-
-    //const applyData = loaderData.filter(product => data[product.id]);
     return (
         <>
             <div style={bannerStyle} className='bg-gray-200 h-72'>
             </div>
             <div className='my-container mt-8 mb-20'>
-                <h2 className='text-center mt-8 text-2xl font-semibold'><span className='text-green-600'>Applied</span> Jobs</h2>
-                <hr className='w-72 mt-3 border-green-600 mx-auto border-2' />
-                <div className='flex justify-end'>
+                <h2 className='text-center mt-6 text-2xl font-semibold'><span className='text-green-600'>Applied</span> Jobs</h2>
+                <hr className='w-72 my-3 border-green-600 mx-auto border-2' />
+                <div className='flex justify-end mt-4'>
                     <div className="dropdown dropdown-bottom">
                         <label tabIndex={0} className="inline-flex gap-2 m-1 bg-green-300 px-6 py-3 rounded-md text-white font-bold">
                             Filter By

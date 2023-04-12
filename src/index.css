@@ -14,3 +14,6 @@
   .banner-img{
     @apply w-96 h-96
   }
+  .app{
+    @apply overflow-x-hidden overflow-y-hidden
+  }

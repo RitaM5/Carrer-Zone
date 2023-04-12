@@ -32,8 +32,8 @@ const Header = () => {
                         className='inline-flex items-center'
                     >
                         <span className='ml-2 inline-flex items-center text-2xl font-bold tracking-wide text-gray-800 '>
-                        <img className='' src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/null/external-leaf-leaves-icongeek26-linear-colour-icongeek26-8.png"/>
-                        <span className='text-green-600'>CAREER</span>ZONE
+                            <img className='' src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/50/null/external-leaf-leaves-icongeek26-linear-colour-icongeek26-8.png" />
+                            <span className='text-green-600'>CAREER</span>ZONE
                         </span>
                     </Link>
                     <ul className='items-center hidden space-x-8 lg:flex'>
@@ -57,14 +57,6 @@ const Header = () => {
                                 Statistics
                             </NavLink>
                         </li>
-                        {/* <li>
-                            <NavLink to='/jobdetails'
-                                aria-label='Job Details'
-                                title='Job Details'
-                                className={({ isActive }) => (isActive ? 'active' : 'default')}>
-                                Details
-                            </NavLink>
-                        </li> */}
                         <li>
                             <NavLink to='/appliedjobs'
                                 aria-label='Applied jobs'
@@ -143,7 +135,7 @@ const Header = () => {
                                     </div>
                                     <nav className=''>
                                         <ul className='space-y-4 text-left'>
-                                        <li>
+                                            <li>
                                                 <Link
                                                     to='/'
                                                     aria-label='Home'
@@ -163,16 +155,6 @@ const Header = () => {
                                                     Statistics
                                                 </Link>
                                             </li>
-                                            {/* <li>
-                                                <Link
-                                                    to='/jobdetails'
-                                                    aria-label='Job Details'
-                                                    title='Job Details'
-                                                    className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
-                                                >
-                                                    Details
-                                                </Link>
-                                            </li> */}
                                             <li>
                                                 <Link
                                                     to='/appliedjobs'

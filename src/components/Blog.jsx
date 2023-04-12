@@ -14,16 +14,6 @@ const Blog = () => {
         backgroundSize: '20% auto',
         backgroundPosition: 'left bottom',
     };
-    // const container = useRef(null)
-    // useEffect(() => {
-    //     lottie.loadAnimation({
-    //         container: container.current,
-    //         renderer: 'svg',
-    //         loop: true,
-    //         autoplay: true,
-    //         animationData: require('./ring.json')
-    //     })
-    // }, [])
     return (
         <>
             <div style={bannerStyle} className='bg-gray-200 h-72'>

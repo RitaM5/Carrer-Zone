@@ -46,7 +46,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <hr className='mt-4 border-white my-container'/>
+            <hr className='mt-4 border-white my-container' />
             <div className='flex justify-between sm:col-auto text-white my-container'>
                 <p className='mb-4'>@2023 CareerZone. All Rights Reserved</p>
                 <p className='mb-4'>Powered by CareerHub</p>

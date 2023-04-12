@@ -41,4 +41,3 @@ const Features = ({ feature}) => {
 };
 
 export default Features;
-//onClick={() => handleDetailsButton(id)}
