@@ -15,7 +15,7 @@ const Banner = () => {
                     <button className='bg-[#9873FF] rounded-md text-white text-sm py-2 px-3'>Get Started</button>
                 </div>
                 <div className='w-full'>
-                    <img className='object-cover banner-img mt-6' src="/public/assets/All Images/banner-img.png" alt="" srcset="" />
+                    <img className='object-cover banner-img mt-6' src="./assets/All Images/banner-img.png" alt="" srcset="" />
                 </div>
             </div>
         </div>

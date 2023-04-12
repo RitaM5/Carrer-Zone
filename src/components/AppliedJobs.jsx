@@ -19,12 +19,13 @@ const AppliedJobs = () => {
         backgroundSize: '20% auto',
         backgroundPosition: 'left bottom',
     };
+
     const appliedJobs = getStoredData()
+    let newData = []
     useEffect(() => {
         fetch('/features.json')
             .then(res => res.json())
             .then(data =>{
-                let newData = []
                 for (const id in appliedJobs) {
                             const foundData = data.find(Ap => Ap.id === id)
                             if(foundData){
@@ -34,6 +35,13 @@ const AppliedJobs = () => {
                         setAppliedData(newData)
             })
     }, []);
+    // const showRemoteJob =()=>{
+    //     const foundData = appliedData.filter(Ap => Ap.job_type === "Remote")
+    //     if(foundData){
+    //        newData.push(foundData)
+    //     }
+    //     setAppliedData(newData)
+    // }
     return (
         <>
             <div style={bannerStyle} className='bg-gray-200 h-72'>
