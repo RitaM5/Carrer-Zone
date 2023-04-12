@@ -1,4 +1,4 @@
-<!-- # Career-Zone
+# Career-Zone
 
 ---
 
@@ -16,4 +16,4 @@
 3.Tailwind 
 4.React-hot-toast
 5.Hero Icon
-6.Recharts -->
+6.Recharts
