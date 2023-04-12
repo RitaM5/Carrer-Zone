@@ -58,7 +58,7 @@ const AppliedJobs = () => {
         <>
             <div style={bannerStyle} className='bg-gray-200 h-72'>
             </div>
-            <div className='my-container mt-8'>
+            <div className='my-container mt-8 mb-20'>
                 <h2 className='text-center mt-8 text-2xl font-semibold'><span className='text-green-600'>Applied</span> Jobs</h2>
                 <hr className='w-72 mt-3 border-green-600 mx-auto border-2' />
                 <div className='flex justify-end'>

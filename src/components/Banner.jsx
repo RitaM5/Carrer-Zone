@@ -4,18 +4,18 @@ const Banner = () => {
         <div className='bg-gray-200  min-h-full'>
             <div className=' my-container h-full'>
                 <div className='lg:flex lg:justify-around lg:items-center lg:gap-28 md:col-auto sm:col-auto ms-14'>
-                <div className='space-y-3 '>
-                    <p className='text-[#1A1919] font-semibold text-4xl'>
-                        One Step Closer To Your
+                <div className='space-y-3 ' data-aos="fade-right">
+                    <p className='text-[#1A1919] font-semibold text-2xl space-y-4'>
+                        <span className=' text-green-400 text-4xl'>One Step</span> Closer To Your
                         <br />
                         <span className='text-[#7E90FE] font-semibold'> Dream Job</span>
                     </p>
                     <p className=''>
-                        Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.
+                    Find all the job circulars available in Bangladesh and around the globe in one place. Post your resume or discover valuable career resources on Skill Jobs - the largest job site in Bangladesh.
                     </p>
                     <button className='bg-[#9873FF] rounded-md text-white text-sm py-2 px-3'>Get Started</button>
                 </div>
-                <div className='w-full'>
+                <div className='w-full' data-aos="fade-up-left">
                     <img className='object-cover banner-img mt-6' src="./assets/All Images/banner-img.png" alt="" srcset="" />
                 </div>
                 </div>

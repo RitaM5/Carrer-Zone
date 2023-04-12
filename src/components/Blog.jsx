@@ -30,7 +30,7 @@ const Blog = () => {
             </div>
             <h1 className='text-center pt-4 my-6 text-4xl font-semibold'><span className=' text-blue-800'>Qustion</span> Mark</h1>
             <div className='my-container my-14 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 gap-16'>
-                <div className='space-y-6'>
+                <div className='space-y-6 w-full'>
                     <div tabIndex={0} className="h-36 collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
                         <div className=" collapse-title text-xl font-medium">
                             When should we use Context API ?
@@ -64,7 +64,7 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className='w-full'>
                     <img className='mt-3' src="./assets/All Images/faq.png" alt="" srcset="" />
                 </div>
             </div>

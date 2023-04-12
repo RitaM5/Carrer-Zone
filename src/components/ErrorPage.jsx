@@ -8,7 +8,7 @@ const ErrorPage = () => {
                 <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 512 512'
-                    className='w-40 h-40 text-gray-600'
+                    className='w-40 h-40 bg-red-600 text-white border-0 rounded-full'
                 >
                     <path
                         fill='currentColor'
@@ -39,7 +39,7 @@ const ErrorPage = () => {
                     </p>
                     <Link
                         to='/'
-                        className='px-8 py-3 font-semibold rounded bg-cyan-200 text-gray-900'
+                        className='px-8 py-3 rounded-md font-semibold text-lg bg-green-600 text-white'
                     >
                         Back to homepage
                     </Link>
