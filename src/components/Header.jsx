@@ -31,8 +31,9 @@ const Header = () => {
                         title='Carrer Zone'
                         className='inline-flex items-center'
                     >
-                        <span className='ml-2 text-2xl font-bold tracking-wide text-gray-800 '>
-                            <span className='text-green-600'>CAREER </span>ZONE
+                        <span className='ml-2 inline-flex items-center text-2xl font-bold tracking-wide text-gray-800 '>
+                        <img className='' src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/null/external-leaf-leaves-icongeek26-linear-colour-icongeek26-8.png"/>
+                        <span className='text-green-600'>CAREER</span>ZONE
                         </span>
                     </Link>
                     <ul className='items-center hidden space-x-8 lg:flex'>

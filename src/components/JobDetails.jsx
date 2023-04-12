@@ -21,8 +21,8 @@ const JobDetails = () => {
         hotToast && toast.success('Your Applied succesfull! 👌', { autoClose: 500 })
     }
     return (
-        <div className='my-container'>
-            <h2 className='text-center my-8 text-4xl font-semibold'>Job Details</h2>
+        <div className='my-container my-8'>
+            <h2 className='text-center my-4 text-4xl font-semibold'>Job <span className='text-green-500'>Details</span></h2>
             <hr />
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-20 mt-14'>
                 <div className=' space-y-5 tracking-wider'>

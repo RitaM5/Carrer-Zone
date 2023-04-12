@@ -29,7 +29,7 @@ const Home = () => {
                 <p className='text-center text-sm my-8 w-96 mx-auto'>
                 By selecting the category or job type that matches your skills and experience, you can more easily find job opportunities that are relevant to your career goals.
                 </p>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12' data-aos="fade-up">
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12'>
                     {
                         categories.map(SingleData =>
                             <Category SingleData={SingleData} key={SingleData.id} />
