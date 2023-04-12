@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 const AppliedData = ({ info }) => {
-    console.log(info);
     return (
         <>
             <div className="card w-full h-full bg-base-100 shadow-2xl p-4">

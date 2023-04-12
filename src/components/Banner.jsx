@@ -2,7 +2,8 @@ import React from 'react';
 const Banner = () => {
     return (
         <div className='bg-gray-200  min-h-full'>
-            <div className=' lg:flex lg:justify-between lg:items-center lg:gap-28 md:col-auto sm:col-auto my-container h-full'>
+            <div className=' my-container h-full'>
+                <div className='lg:flex lg:justify-around lg:items-center lg:gap-28 md:col-auto sm:col-auto ms-14'>
                 <div className='space-y-3 '>
                     <p className='text-[#1A1919] font-semibold text-4xl'>
                         One Step Closer To Your
@@ -16,6 +17,7 @@ const Banner = () => {
                 </div>
                 <div className='w-full'>
                     <img className='object-cover banner-img mt-6' src="./assets/All Images/banner-img.png" alt="" srcset="" />
+                </div>
                 </div>
             </div>
         </div>

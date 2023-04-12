@@ -7,13 +7,13 @@ const Header = () => {
     let backgroundImage = '';
     switch (location.pathname) {
         case '/statistics':
-            backgroundImage = 'url("/public/assets/All Images/Vector-1.png")';
+            backgroundImage = 'url("./assets/All Images/Vector-1.png")';
             break;
         case '/appliedjobs':
-            backgroundImage = 'url("/public/assets/All Images/Vector-1.png")';
+            backgroundImage = 'url("./assets/All Images/Vector-1.png")';
             break;
         case '/blog':
-            backgroundImage = 'url("/public/assets/All Images/Vector-1.png")';
+            backgroundImage = 'url("./assets/All Images/Vector-1.png")';
             break;
     }
     const headerStyle = {

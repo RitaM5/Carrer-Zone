@@ -1,23 +1,19 @@
-<!-- # FoodBaz-Youtuber
+<!-- # Career-Zone
 
 ---
 
-## [Live Site Link](https://foodbaz-youtuber.netlify.app/)
+## Live Site Link: [https://carrer-zone.netlify.app/](https://carrer-zone.netlify.app/)
 
 ### Project Overview
-1. single page design faster
-2. sign in using google,email and password.
-3. password reset system.
-4. email varification system.
-5.when route changing then does not reload page. 
-6. The website is outstanding for the most colorcombination maintaining 
+1. It's a Job applied mini single page web application project.
+2. Will help the aplicant to find the job of his choice and the applicant can apply for his job.
+3.when route changing then does not reload page and can see various information in every route. 
+4. The website is outstanding for the most colorcombination maintaining 
 
 ### List of technology used in my project
 1.React
 2.React Router
-3.Bootstrap-5
-4.firebase
-5.React-spinners.
-6.React-firebase-hooks.
-7.React-Tostify.
-8.Icon8 -->
+3.Tailwind 
+4.React-hot-toast
+5.Hero Icon
+6.Recharts -->

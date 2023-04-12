@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { getStoredData } from '../utilities/fakeDb';
 import AppliedData from './AppliedData';
+
 const AppliedJobs = () => {
+    const [mainAppliedData, setMainAppliedData] = useState([])
     const [appliedData, setAppliedData] = useState([])
-    const [appliedJobsValue, setAppliedJobsValue] = useState({})
-    const [selectedValue, setSelectedValue] = useState("")
+    const [remote, setRemote] = useState([]);
+    const [onsite, setOnsite] = useState([]);
     const location = useLocation();
     let backgroundImage = '';
     switch (location.pathname) {
@@ -19,29 +21,39 @@ const AppliedJobs = () => {
         backgroundSize: '20% auto',
         backgroundPosition: 'left bottom',
     };
-
     const appliedJobs = getStoredData()
-    let newData = []
-    useEffect(() => {
-        fetch('/features.json')
-            .then(res => res.json())
-            .then(data =>{
-                for (const id in appliedJobs) {
-                            const foundData = data.find(Ap => Ap.id === id)
-                            if(foundData){
-                               newData.push(foundData)
-                            }
+        useEffect(() => {
+            fetch('/features.json')
+                .then(res => res.json())
+                .then(data => {
+                    let newData = []
+                    for (const id in appliedJobs) {
+                        const foundData = data.find(Ap => Ap.id === id)
+                        if (foundData) {
+                            newData.push(foundData)
                         }
-                        setAppliedData(newData)
-            })
-    }, []);
-    // const showRemoteJob =()=>{
-    //     const foundData = appliedData.filter(Ap => Ap.job_type === "Remote")
-    //     if(foundData){
-    //        newData.push(foundData)
-    //     }
-    //     setAppliedData(newData)
-    // }
+                    }
+                    setAppliedData(newData)
+                    setMainAppliedData(newData)
+                })
+        }, []);
+
+    useEffect(() => {
+        const remoteJobs = mainAppliedData.filter(product => product.job_type === 'Remote');
+        setRemote(remoteJobs);
+        const onsiteJobs = mainAppliedData.filter(product => product.job_type === 'Onsite');
+        setOnsite(onsiteJobs);
+    }, [appliedData]);
+
+    const handleRemote = () => {
+        setAppliedData(remote);
+    }
+
+    const handleOnsite = () => {
+        setAppliedData(onsite);
+    }
+
+    //const applyData = loaderData.filter(product => data[product.id]);
     return (
         <>
             <div style={bannerStyle} className='bg-gray-200 h-72'>
@@ -50,16 +62,16 @@ const AppliedJobs = () => {
                 <h2 className='text-center mt-8 text-2xl font-semibold'><span className='text-green-600'>Applied</span> Jobs</h2>
                 <hr className='w-72 mt-3 border-green-600 mx-auto border-2' />
                 <div className='flex justify-end'>
-                    <div className="dropdown dropdown-hover mt-20">
-                        <label tabIndex={0} className=" bg-green-300 py-3 text-white rounded-md px-8 m-1 font-bold inline-flex gap-2">
+                    <div className="dropdown dropdown-bottom">
+                        <label tabIndex={0} className="inline-flex gap-2 m-1 bg-green-300 px-6 py-3 rounded-md text-white font-bold">
                             Filter By
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                             </svg>
                         </label>
-                        <ul tabIndex={0} className=" mt-2 dropdown-content menu p-2 shadow bg-base-200 rounded-box w-52">
-                            <li ><a>Remote jobs</a></li>
-                            <li ><a>Onsite jobs</a></li>
+                        <ul tabIndex={0} className="dropdown-content mt-3 menu p-2 shadow bg-gray-200 rounded-box w-52">
+                            <li onClick={handleRemote}><a className='font-bold'>Remote jobs</a></li>
+                            <li onClick={handleOnsite}><a className='font-bold'>Onsite jobs</a></li>
                         </ul>
                     </div>
                 </div>
@@ -72,5 +84,4 @@ const AppliedJobs = () => {
         </>
     );
 };
-
 export default AppliedJobs;
