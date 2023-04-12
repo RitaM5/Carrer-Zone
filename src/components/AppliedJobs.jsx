@@ -10,7 +10,7 @@ const AppliedJobs = () => {
     let backgroundImage = '';
     switch (location.pathname) {
         case '/appliedjobs':
-            backgroundImage = 'url("/public/assets/All Images/Vector.png")';
+            backgroundImage = 'url("./assets/All Images/Vector.png")';
             break;
     }
     const bannerStyle = {

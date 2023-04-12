@@ -6,7 +6,7 @@ const Blog = () => {
     let backgroundImage = '';
     switch (location.pathname) {
         case '/blog':
-            backgroundImage = 'url("/public/assets/All Images/Vector.png")';
+            backgroundImage = 'url("./assets/All Images/Vector.png")';
             break;
     }
     const bannerStyle = {
